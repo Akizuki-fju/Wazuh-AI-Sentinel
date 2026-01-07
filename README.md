@@ -66,7 +66,7 @@ NVIDIA_API_KEY="nvapi-********************************"，另外Wazuh 連線資�
 ```bash
 python -m streamlit run app.py
 ```
-### 4.系統截圖
+### 4. 系統截圖
 
 截圖一：
 
@@ -95,6 +95,7 @@ python -m streamlit run app.py
 ### License
 
 This project is created for the NTU GenAI Course (National Taiwan University). For educational purposes only.
+
 
 
 
