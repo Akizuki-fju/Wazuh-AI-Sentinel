@@ -17,53 +17,53 @@
 
 專案內含一個 **Streamlit 戰情儀表板 (Dashboard)** 作為 MCP Client 的參考實作，展示如何利用 AI Agent 進行全自動化的資安維運 (SecOps)。
 
-## 核心功能 (Key Features)
+## 核心功能
 
-* **即時戰情儀表板 (Live Dashboard)**
-    * 可視化呈現系統監控覆蓋率 (Coverage)。
-    * 即時統計活躍主機 (Active) 與離線主機 (Disconnected) 數量。
-* **威脅獵捕 (Threat Hunting)**
+* **即時戰情儀表板 **
+    * 可視化呈現系統監控覆蓋率。
+    * 即時統計活躍主機與離線主機數量。
+* **威脅獵捕**
     * 自動對接 Wazuh API，擷取 MITRE ATT&CK 框架下的高風險警報。
-    * 偵測異常程序與未授權的網路連接埠 (Ports)。
-* **AI 資安智囊 (AI Security Analyst)**
+    * 偵測異常程序與未授權的網路連接埠。
+* **AI 資安智囊**
     * 利用 LLM 自動分析 JSON 格式的原始日誌。
     * 生成全中文的風險評估報告與防禦建議。
 * **企業級整合**
     * 支援 Wazuh Token 自動化認證管理。
-    * 相容於自簽憑證 (Self-signed Cert) 的內部環境。
+    * 相容於Self-signed Cert的內部環境。
 
-## 技術架構 (Tech Stack)
+## 技術架構
 
-* **Frontend**: Streamlit (Python)
+* **Frontend**: Streamlit
 * **Backend**: Wazuh API (v4.x)
 * **Protocol**: Model Context Protocol (MCP)
 * **Language**: Python 3.11+
 * **AI Engine**: LangChain + NVIDIA NIM (Llama-3.1-70b-instruct)
 * **Environment**: Docker / VirtualBox (Ubuntu Server & Windows Agent)
 
-## 快速開始 (Quick Start)
+## 快速開始 
 
-### 1. 安裝依賴 (Installation)
+### 1. 安裝依賴 
 
 您可以選擇直接安裝套件，或是使用 `requirements.txt` 安裝：
 
-# 方法一：使用 requirements.txt (推薦)
+方法一：使用 requirements.txt 
 ```bash
 pip install -r requirements.txt
 ```
-# 方法二：手動安裝所有套件
+方法二：手動安裝所有套件
 ```bash
 pip install streamlit requests python-dotenv langchain-openai langchain-community
 ```
-# 2. 環境設定 (Configuration)
+# 2. 環境設定 
 本專案已附帶一個 .env 範本檔案（內容為 ******），請在專案根目錄確認 .env 檔案存在，並將其中的內容修改為您真實的 NVIDIA API Key：
 
 請將下方的星號替換為您的真實 Key，例如: nvapi-xxxxx...
 NVIDIA_API_KEY="nvapi-********************************"
 (Wazuh 連線資訊與帳號密碼已內建於 app.py 中，請將****改成自己的帳密)
 
-# 3. 啟動系統 (Run)
-在終端機 (Terminal) 或 PowerShell 輸入以下指令啟動：
+# 3. 啟動系統 
+在Terminal 或 PowerShell 輸入以下指令啟動：
 ```bash
 python -m streamlit run app.py
 ```
@@ -96,6 +96,7 @@ python -m streamlit run app.py
 ### License
 
 This project is created for the NTU GenAI Course (National Taiwan University). For educational purposes only.
+
 
 
 
