@@ -59,8 +59,7 @@ pip install streamlit requests python-dotenv langchain-openai langchain-communit
 本專案已附帶一個 .env 範本檔案（內容為 ******），請在專案根目錄確認 .env 檔案存在，並將其中的內容修改為您真實的 NVIDIA API Key：
 
 請將下方的星號替換為您的真實 Key，例如: nvapi-xxxxx...
-NVIDIA_API_KEY="nvapi-********************************"
-(Wazuh 連線資訊與帳號密碼已內建於 app.py 中，請將****改成自己的帳密)
+NVIDIA_API_KEY="nvapi-********************************"，另外Wazuh 連線資訊與帳號密碼已內建於 app.py 中，請將****改成自己的帳密
 
 # 3. 啟動系統 
 在Terminal 或 PowerShell 輸入以下指令啟動：
@@ -96,6 +95,7 @@ python -m streamlit run app.py
 ### License
 
 This project is created for the NTU GenAI Course (National Taiwan University). For educational purposes only.
+
 
 
 
