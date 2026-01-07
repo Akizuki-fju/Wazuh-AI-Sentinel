@@ -1,0 +1,9 @@
+requests
+python-dotenv
+langchain
+langchain-nvidia-ai-endpoints
+urllib3
+langchain-openai
+langchain-community
+langgraph
+streamlit
