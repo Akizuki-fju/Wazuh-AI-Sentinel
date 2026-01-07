@@ -13,7 +13,7 @@
 
 本專案實作了一個標準化的 **Wazuh MCP Server (Model Context Protocol)**。
 
-它將 Wazuh SIEM 複雜的 API 封裝為 AI 模型可理解的 **工具** 與 **資源**，透過此伺服器，大型語言模型 (如 Llama-3) 可以直接與 Wazuh Manager 進行互動，自主執行查詢 Agent 狀態、撈取 Log、分析威脅警報等操作。
+將 Wazuh SIEM 複雜的 API 封裝為 AI 模型可理解的 **工具** 與 **資源**，透過此伺服器，大型語言模型 (如 Llama-3) 可以直接與 Wazuh Manager 進行互動，自主執行查詢 Agent 狀態、撈取 Log、分析威脅警報等操作。
 
 專案內含一個 **Streamlit 戰情儀表板** 作為 MCP Client 的參考實作，展示如何利用 AI Agent 進行全自動化的資安維運。
 
@@ -95,6 +95,7 @@ python -m streamlit run app.py
 ### License
 
 This project is created for the NTU GenAI Course (National Taiwan University). For educational purposes only.
+
 
 
 
