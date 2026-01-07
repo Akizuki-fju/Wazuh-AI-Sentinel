@@ -30,7 +30,7 @@
     * 支援 Wazuh Token 自動化認證管理。
     * 相容於自簽憑證 (Self-signed Cert) 的內部環境。
 
-## 🛠️ 技術架構 (Tech Stack)
+## 技術架構 (Tech Stack)
 
 * **Frontend**: Streamlit (Python)
 * **Backend**: Wazuh API (v4.x)
@@ -54,18 +54,18 @@ pip install streamlit requests python-dotenv langchain-openai langchain-communit
 # 2. 環境設定 (Configuration)
 本專案已附帶一個 .env 範本檔案（內容為 ******），請在專案根目錄確認 .env 檔案存在，並將其中的內容修改為您真實的 NVIDIA API Key：
 
-# 請將下方的星號替換為您的真實 Key，例如: nvapi-xxxxx...
+請將下方的星號替換為您的真實 Key，例如: nvapi-xxxxx...
 NVIDIA_API_KEY="nvapi-********************************"
 (Wazuh 連線資訊與帳號密碼已內建於 app.py 中，請將****改成自己的帳密)
 
-3. 啟動系統 (Run)
+# 3. 啟動系統 (Run)
 在終端機 (Terminal) 或 PowerShell 輸入以下指令啟動：
 ```bash
 python -m streamlit run app.py
 ```
-4.系統截圖
+# 4.系統截圖
 
-### 截圖一：
+截圖一：
 
 ![截圖一展示](demopic1.png)
 
@@ -74,7 +74,7 @@ python -m streamlit run app.py
 
 ---
 
-### 截圖二：
+截圖二：
 
 ![截圖二展示](demopic2.png)
 
@@ -82,13 +82,14 @@ python -m streamlit run app.py
 > 此畫面展示 JSON 原始資料結構欄內的內容
 ---
 
-### 截圖三：
+截圖三：
 
 ![截圖三展示](demopic3.png)
 
 > **功能說明：**
 > 此畫面展示了 AI 扮演資安長 (CISO) 角色，針對當前警報數據所生成的全中文風險評估報告與防禦建議。
 
-License
+### License
 
 This project is created for the NTU GenAI Course (National Taiwan University). For educational purposes only.
+
