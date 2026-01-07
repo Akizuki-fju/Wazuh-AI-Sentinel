@@ -11,9 +11,11 @@
 
 ## 專案簡介 (Introduction)
 
-本專案是一個基於 **Wazuh SIEM** 的現代化資安戰情儀表板。透過整合 **NVIDIA NIM (Llama-3-70b)** 大型語言模型，將傳統繁雜的資安數據轉化為直觀的視覺化圖表與 AI 智能分析報告。
+本專案實作了一個標準化的 **Wazuh MCP Server (Model Context Protocol)**。
 
-系統能夠即時監控 Agent 覆蓋率、自動擷取 MITRE ATT&CK 威脅警報，並由 AI 扮演資安長 (CISO) 角色，針對當前風險提供具體的修補建議。
+它將 Wazuh SIEM 複雜的 API 封裝為 AI 模型可理解的 **工具 (Tools)** 與 **資源 (Resources)**，透過此伺服器，大型語言模型 (如 Llama-3, Claude 3.5 Sonnet) 可以直接與 Wazuh Manager 進行互動，自主執行查詢 Agent 狀態、撈取 Log、分析威脅警報等操作。
+
+專案內含一個 **Streamlit 戰情儀表板 (Dashboard)** 作為 MCP Client 的參考實作，展示如何利用 AI Agent 進行全自動化的資安維運 (SecOps)。
 
 ## 核心功能 (Key Features)
 
@@ -70,7 +72,7 @@ python -m streamlit run app.py
 ![截圖一展示](demopic1.png)
 
 > **功能說明：**
-> 此畫面展示了系統的即時監控覆蓋率、活躍主機數量，以及偵測到的威脅戰術統計，下方可看到 JSON 原始資料結構欄。
+> 此畫面展示了系統的即時監控覆蓋率(戰情儀表板)、活躍主機數量，以及偵測到的威脅戰術統計，下方可看到 JSON 原始資料結構欄。
 
 ---
 
@@ -92,4 +94,5 @@ python -m streamlit run app.py
 ### License
 
 This project is created for the NTU GenAI Course (National Taiwan University). For educational purposes only.
+
 
