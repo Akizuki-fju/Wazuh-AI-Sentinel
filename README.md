@@ -92,15 +92,5 @@ python -m streamlit run app.py
 > **功能說明：**
 > 此畫面展示了 AI 扮演資安長 (CISO) 角色，針對當前警報數據所生成的全中文風險評估報告與防禦建議。
 
-### License
-
-This project is created for the NTU GenAI Course (National Taiwan University). For educational purposes only.
-
-
-
-
-
-
-
 
 
